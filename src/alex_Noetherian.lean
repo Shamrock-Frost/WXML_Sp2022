@@ -38,7 +38,7 @@ begin
   intros h g,
   by_contra h',
   apply h,
-  existsi S,
+  use S,
   ext,
   constructor,
   { simp at h', apply_assumption },
